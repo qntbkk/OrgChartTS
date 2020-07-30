@@ -1,0 +1,62 @@
+{
+  "name": "orgassistantchartts",
+  "widgetName": "OrgAssistantChartTS",
+  "version": "1.0.0",
+  "description": "org chart",
+  "copyright": "TBN2020",
+  "author": "Tony Tran Bkk",
+  "config": {
+    "widgetPath": "../..//widgets",
+    "projectPath": "../..//",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "tbn",
+  "scripts": {
+    "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
+    "dev": "pluggable-widgets-tools start:ts",
+    "build": "pluggable-widgets-tools build:ts",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.3.1",
+    "@types/big.js": "^4.0.5",
+    "@types/classnames": "^2.2.4",
+    "@types/jest": "^24.0.0",
+    "@types/react": "^16.8.19",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-redux": "^7.1.6",
+    "@types/react-test-renderer": "^16.8.1",
+    "cross-env": "^5.2.0",
+    "husky": "^2.4.0",
+    "prettier": "1.18.2",
+    "pretty-quick": "^1.11.0",
+    "ts-loader": "^6.2.1",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "@types/node": "^13.1.6",
+    "@types/react-dom": "^16.9.4",
+    "big.js": "^5.2.2",
+    "classnames": "^2.2.6",
+    "gojs": "^2.1.0",
+    "gojs-react": "^1.0.4",
+    "immer": "^5.3.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "4.4.0",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "typescript-fsa": "^3.0.0-beta-2",
+    "typescript-fsa-reducers": "^1.2.1"
+  }
+}

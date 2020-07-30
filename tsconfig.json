@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "types": ["node"],
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": false
+    },
+
+    "extends": "./node_modules/@mendix/pluggable-widgets-tools/configs/tsconfig.base.json"
+}
